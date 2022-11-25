@@ -92,3 +92,10 @@ function FormFlashMsg($sesName){
 }
 </pre>
 </main>
+
+
+
+<?php
+//End of file
+require_once('footer.php');
+?>
