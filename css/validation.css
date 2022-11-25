@@ -1,0 +1,15 @@
+.zl-form-info::before {
+    /* pseudo class don't work on input element*/
+    content: attr(data-error) "\a";
+    white-space: pre;
+    color:#ff0000;
+    background-color: #ffdab9;
+}
+/*
+::-moz-selection{
+    background: #ff6347;
+}
+::selection{
+    background: #ff6347;
+}
+*/
