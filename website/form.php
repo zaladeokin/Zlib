@@ -38,13 +38,14 @@ require_once('header.php');
 <label for="v2" class="zl-form-info" <?= FormFlashMsg('te'); ?> >Test</label>
 <input type="text" name='test' id="v2" value="<?= repopulate('test'); ?>"><br>
 <input type="submit" value="send">
+</form>
 </section>
 
 <aside>
 <h3>source code</h3>
-<code>
-    <h4> PHP</h4>
+<h4> PHP</h4>
 <pre>
+<code>
 session_start();
 require_once("zlib.php");
 if( isset($_POST['name']) && isset($_POST['test']) ){
@@ -65,12 +66,11 @@ if( isset($_POST['name']) && isset($_POST['test']) ){
     header("Location:form.php");
     return;
 }
-</pre>
 </code>
-
-<code>
-    <h4> HTML</h4>
+</pre>
+<h4> HTML</h4>
 <pre>
+<code>
 <?php
 $code= '<form method="POST">';
 $code .= '<label for="v1" class="zl-form-info" <?= FormFlashMsg(\'error\'); ?> >Name</label>'."\n";
@@ -80,8 +80,8 @@ $code .= '<input type="text" name="test" id="v2" value="<?= repopulate(\'test\')
 $code .= '<input type="submit" value="send">';
 echo htmlentities($code);
 ?>
-</pre>
 </code>
+</pre>
 
 </aside>
 
