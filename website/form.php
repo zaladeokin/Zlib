@@ -36,7 +36,7 @@ require_once('header.php');
 <label for="v1" class="zl-form-info" <?= FormFlashMsg('error'); ?> >Name</label>
 <input type="text" name='name' id="v1" value="<?= repopulate('name'); ?>"><br>
 <label for="v2" class="zl-form-info" <?= FormFlashMsg('te'); ?> >Test</label>
-<input type="text" name='test' id="v2" value="<?= repopulate('test'); ?>"><br>
+<input type="text" name='test' id="v2" value="<?= repopulate('test'); ?>"><br><br>
 <input type="submit" value="send">
 </form>
 </section>
@@ -76,7 +76,7 @@ $code= '<form method="POST">';
 $code .= '<label for="v1" class="zl-form-info" <?= FormFlashMsg(\'error\'); ?> >Name</label>'."\n";
 $code .= '<input type="text" name="name" id="v1" value="<?= repopulate(\'name\'); ?>"><br>'."\n";
 $code .= '<label for="v2" class="zl-form-info" <?= FormFlashMsg(\'te\'); ?> >Test</label>'."\n";
-$code .= '<input type="text" name="test" id="v2" value="<?= repopulate(\'test\'); ?>"><br>'."\n";
+$code .= '<input type="text" name="test" id="v2" value="<?= repopulate(\'test\'); ?>"><br><br>'."\n";
 $code .= '<input type="submit" value="send">';
 echo htmlentities($code);
 ?>
